@@ -1,5 +1,5 @@
 $(".Search").on("click", function () {
-    console.log("hello");
+
 
     var city = $("#Search").val();
     console.log(city);
@@ -15,6 +15,7 @@ $(".Search").on("click", function () {
 
             // Save the data in local storage
             localStorage.setItem('weatherData', JSON.stringify(data));
+           
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
@@ -27,5 +28,11 @@ if (storedData) {
     const weatherData = JSON.parse(storedData);
     console.log(weatherData);
     // You can display the weather data on the page or perform other actions with it.
+   
 }
 
+function displayWeatherInfo(weatherData) {
+    // Assuming weatherData has the necessary properties
+    var cityNameElement = document.getElementById("cityName");
+    cityNameElement.innerHTML = `<p>City: ${city[1]}</p>`;
+}
