@@ -5,7 +5,7 @@ $(".Search").on("click", function () {
     console.log(city);
 
     var APIKey = "47ed4784922cdc48cdbb6ec11db4b3e7";
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey;
 
     fetch(queryURL)
         .then(response => response.json())
