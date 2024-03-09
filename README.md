@@ -7,7 +7,7 @@ This is a weather predictor that searches for a city name, then gives a 5 day we
 - Click a previous city to search the weather again.
 
 ## Screenshot 
-![Screenshot of Weather Predictor](./assets/screenshot.pdf)
+![Screenshot of Weather Predictor](./assets/screenshot.jpg)
 
 ## Link to deployed application 
 https://mikenavarrete.github.io/weather-predictor/
