@@ -1,3 +1,150 @@
-.text-center {
+header {
     text-align: center;
+    background: linear-gradient(to right, #1f88ff, #2c3e50);
+    color:  white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.header h1 {
+    margin: 0;
+    padding: 25px;
+
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+
+.day2, .day3, .day4, .day5 {
+    background: linear-gradient(to right, #1f88ff, #2c3e50);
+    margin: 10px;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 20px;
+ 
+    
+}
+
+#cityName {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#searchBox {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.forecast {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 710px;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#cityName {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    padding-left: 200px;
+}
+
+.day1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 755px;
+    border: 2px solid black;
+    width: 800px;
+    background: linear-gradient(to right, #1f88ff, #2c3e50);
+}
+
+.previousCityButton {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background: linear-gradient(to right, #1fa2ff, #2c3e50);
+    color: white;
+    border:#2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#previousCities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+}
+
+.Search {
+    background:  linear-gradient(to right, #1f88ff, #2c3e50); 
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .day1, .forecast{
+        margin-right: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .day1, .forecast{
+        margin-right: 150px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .day1, .forecast{
+        margin-right: 50px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .day1, .forecast{
+        margin-right: 50px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .day1, .forecast{
+        margin-right: 50px;
+        width: 400px;
+    }
 }

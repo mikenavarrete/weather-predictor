@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Mike's Weather Predictor</title>
 </head>
 <body>
-    <header class="text-center">
-        <h1>Mikes Weather Predictor</h1>
-        <div>
-            <input type="text" name="" id="Search">
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+     
+       
+    </header>
+    <main> 
+        <div id="searchBox">
+            <h2>Search for a City!</h2>
+            <input type="text" name="" id="Search" placeholder="San Diego">
             <button class="Search">Search</button>
         </div>
+        <div id="previousCitiesSection">
+            <h2>Previously Searched Cities</h2>
+            <ul id="previousCities"></ul>
+        </div>
+        
         <div id="cityName">  </div>
-        <div id="currentDate">  </div>
-        <div id="temp">  </div>
-        <div id="humidity">  </div>
-        <div id="windSpeed">  </div>
-    </header>
+        <div class="day1">
+            <div id="currentDate">  </div>
+            <div id="temp">  </div>
+            <div id="humidity">  </div>
+            <div id="windSpeed">  </div>
+            <div id="icon1"> </div>
+        </div>
+        <div class="forecast">
+            <div class="day2">
+                <div id="date2"></div>
+                <div id="temp2"></div>
+                <div id="humidity2"></div>
+                <div id="windSpeed2"></div>
+                <div id="icon2"> </div>
+            </div>
+            <div class="day3">
+                <div id ="date3"></div>
+                <div id="temp3"></div>
+                <div id="humidity3"></div>
+                <div id="windSpeed3"></div>
+                <div id="icon3"> </div>
+            </div>
+            <div class="day4">
+                <div id ="date4"></div>
+                <div id="temp4"></div>
+                <div id="humidity4"></div>
+                <div id="windSpeed4"></div>
+                <div id="icon4"> </div>
+            </div>
+            <div class="day5">
+                <div id ="date5"></div>
+                <div id="temp5"></div>
+                <div id="humidity5"></div>
+                <div id="windSpeed5"></div>
+                <div id="icon5"> </div>
+            </div>
+        </div>
+      
+    </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
