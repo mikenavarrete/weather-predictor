@@ -8,6 +8,8 @@ $("#Search").on("keydown", function (event){
     }
 });
 
+var weatherData;
+
 function searchWeather(){
 
     var city = $("#Search").val();
@@ -32,9 +34,17 @@ function searchWeather(){
             searchedCities.push(city);
             localStorage.setItem('searchedCities', JSON.stringify(searchedCities));
             localStorage.setItem('weatherData', JSON.stringify(data));
- 
-            displayWeatherInfo(data);
+
+            weatherData = data;
+
+            displayWeatherInfo(weatherData); 
+            displayWeatherInfo2(weatherData);
+            displayWeatherInfo3(weatherData);
+            displayWeatherInfo4(weatherData);
+            displayWeatherInfo5(weatherData);
             displayPreviousCities();
+ 
+
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
@@ -48,11 +58,7 @@ if (storedData) {
     const weatherData = JSON.parse(storedData);
     console.log(weatherData);
     // You can display the weather data on the page or perform other actions with it.
-    displayWeatherInfo(weatherData); 
-    displayWeatherInfo2(weatherData);
-    displayWeatherInfo3(weatherData);
-    displayWeatherInfo4(weatherData);
-    displayWeatherInfo5(weatherData);
+
 }
 
 function displayWeatherInfo(weatherData) {
