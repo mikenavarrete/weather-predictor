@@ -8,5 +8,6 @@ This is a weather predictor that searches for a city name, then gives a 5 day we
 
 ## Screenshot 
 ![Screenshot of Weather Predictor](./assets/screenshot.pdf)
+
 ## Link to deployed application 
 https://mikenavarrete.github.io/weather-predictor/
